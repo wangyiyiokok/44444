@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微博评论数据分析可视化</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        .chart-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .chart-card:hover {
+            transform: translateY(-5px);
+        }
+        .chart-img {
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+        .chart-title {
+            text-align: center;
+            margin: 10px 0 5px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+        .chart-desc {
+            font-size: 14px;
+            color: #aaaaaa;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>微博评论数据分析可视化</h1>
+    
+    <div class="dashboard">
+        <!-- 负面评论词云 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/负面评论词云.png" alt="负面评论词云" class="chart-img">
+            <h3 class="chart-title">负面评论词云</h3>
+            <p class="chart-desc">高频词：哇哇、耳环等</p>
+        </div>
+        
+        <!-- 评论地域分布 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/评论地域分布.png" alt="评论地域分布" class="chart-img">
+            <h3 class="chart-title">评论地域分布</h3>
+            <p class="chart-desc">用户地域分布折线图</p>
+        </div>
+        
+        <!-- 评论情感 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/评论情感.png" alt="评论情感" class="chart-img">
+            <h3 class="chart-title">评论情感分析</h3>
+            <p class="chart-desc">情感分布饼图（绿色占比大）</p>
+        </div>
+        
+        <!-- 评论时间分布 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/评论时间分布.png" alt="评论时间分布" class="chart-img">
+            <h3 class="chart-title">评论时间分布</h3>
+            <p class="chart-desc">时间分布柱状图</p>
+        </div>
+        
+        <!-- 情绪波动按天 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/情绪波动按天.png" alt="情绪波动按天" class="chart-img">
+            <h3 class="chart-title">情绪波动（按天）</h3>
+            <p class="chart-desc">每日情绪变化折线图</p>
+        </div>
+        
+        <!-- 情绪波动按小时 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/情绪波动按小时.png" alt="情绪波动按小时" class="chart-img">
+            <h3 class="chart-title">情绪波动（按小时）</h3>
+            <p class="chart-desc">每小时情绪变化折线图</p>
+        </div>
+        
+        <!-- 整体评论词云 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/整体评论词云.png" alt="整体评论词云" class="chart-img">
+            <h3 class="chart-title">整体评论词云</h3>
+            <p class="chart-desc">高频词：高考、加油等</p>
+        </div>
+        
+        <!-- 正面评论词云 -->
+        <div class="chart-card">
+            <img src="file:///C:/Users/35869/Desktop/生成的图表/正面评论词云.png" alt="正面评论词云" class="chart-img">
+            <h3 class="chart-title">正面评论词云</h3>
+            <p class="chart-desc">高频词：加油、宝宝等</p>
+        </div>
+    </div>
+</body>
+</html>
